@@ -3,8 +3,7 @@ package com.mvp.wangll.mvptest.demo.list;
 import android.view.View;
 
 import com.mvp.wangll.mvptest.R;
-import com.mvp.wangll.mvptest.demo.list.LoadingView;
-import com.mvp.wangll.mvptest.framework.support.Lce.animator.DefaultLceAnimator;
+import com.mvp.wangll.mvptest.Mvpframework.support.Lce.animator.DefaultLceAnimator;
 
 /**
  * Created by Administrator on 2017/10/23 0023.

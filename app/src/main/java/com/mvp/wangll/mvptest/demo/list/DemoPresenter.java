@@ -2,17 +2,15 @@ package com.mvp.wangll.mvptest.demo.list;
 
 import android.os.Handler;
 
-import com.mvp.wangll.mvptest.demo.list.DemoModel;
 import com.mvp.wangll.mvptest.demo.list.bean.loginBean;
-import com.mvp.wangll.mvptest.framework.base.MvpBasePresenter;
-import com.mvp.wangll.mvptest.framework.support.Lce.MvpLceView;
-import com.mvp.wangll.mvptest.framework.base.MvpPresenter;
+import com.mvp.wangll.mvptest.Mvpframework.base.MvpBasePresenter;
+import com.mvp.wangll.mvptest.Mvpframework.support.Lce.MvpLceView;
 
 /**
  * Created by Administrator on 2017/10/11 0011.
  */
 
-public class DemoPresenter<V extends MvpLceView<DemoModel>> extends MvpBasePresenter<V> {
+public class DemoPresenter<V extends MvpLceView> extends MvpBasePresenter<V> {
     private DemoModel list;
     private Handler handler = new Handler();
 
@@ -33,7 +31,7 @@ public class DemoPresenter<V extends MvpLceView<DemoModel>> extends MvpBasePrese
             @Override
             public void run() {
                 //绑定数据
-                getView().bindData(list,isPullRefresh);
+//                getView().bindData(list,isPullRefresh);
 
                 getView().showContent(isPullRefresh);
 

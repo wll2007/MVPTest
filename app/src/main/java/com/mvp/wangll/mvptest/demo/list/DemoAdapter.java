@@ -3,8 +3,8 @@ package com.mvp.wangll.mvptest.demo.list;
 import android.content.Context;
 
 import com.mvp.wangll.mvptest.R;
-import com.mvp.wangll.mvptest.framework.adapter.BaseViewHolder;
-import com.mvp.wangll.mvptest.framework.adapter.CommonAdapter;
+import com.mvp.wangll.mvptest.Mvpframework.adapter.BaseViewHolder;
+import com.mvp.wangll.mvptest.Mvpframework.adapter.CommonAdapter;
 import com.mvp.wangll.mvptest.demo.list.bean.loginBean;
 
 import java.util.List;

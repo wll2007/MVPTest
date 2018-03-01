@@ -8,15 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mvp.wangll.mvptest.R;
-import com.mvp.wangll.mvptest.framework.base.PresentFactory;
-import com.mvp.wangll.mvptest.framework.base.PresenterLoader;
+import com.mvp.wangll.mvptest.Mvpframework.base.PresentFactory;
+import com.mvp.wangll.mvptest.Mvpframework.base.PresenterLoader;
+import com.trello.rxlifecycle2.android.FragmentEvent;
 
 
 /**
  * Created by Administrator on 2017/10/19 0019.
  */
 
-public class DemoFragment extends MvpListViewFragment<DemoModel,DemoFragment,DemoPresenter<DemoFragment>> {
+public class DemoFragment extends MvpListViewFragment<DemoFragment,DemoPresenter<DemoFragment>,FragmentEvent> {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,11 +59,11 @@ public class DemoFragment extends MvpListViewFragment<DemoModel,DemoFragment,Dem
     }
 */
 
-    @Override
+   /* @Override
     public void bindData(DemoModel data, boolean isPullRefresh) {
         getAdapter().setData(data.getmData());
         getAdapter().notifyDataSetChanged();
-    }
+    }*/
 
     @Override
     public Loader<DemoPresenter<DemoFragment>> onCreateLoader(int id, Bundle args) {
